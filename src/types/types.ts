@@ -28,3 +28,14 @@ export type TUser = {
   _id: string;
 };
 
+export type TSheet = {
+  id: number;
+  path: string;
+  tmp_path: string;
+  name: string;
+  owner: number;
+  created_at: string;
+  modified_at: string;
+  access?: { editor?: TUser[]; viewer?: TUser[] };
+};
+
